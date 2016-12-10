@@ -8,7 +8,7 @@ import { User } from '../user';
 })
 export class EmployeeListComponent implements OnInit {
 
-  @Input()employee : User;
+  @Input()employee: User;
 
   constructor() { }
 
