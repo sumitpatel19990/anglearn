@@ -1,3 +1,13 @@
-<h1>
-  {{title}}
-</h1>
+<h3>Selected User : </h3>
+<div class="row">
+  <div class="col-md-6">
+    <app-employee-list [employee]="users" ></app-employee-list>
+  </div>
+  <div class="col-md-6">  
+    <div *ngIf="selectedUser" >
+      <h6>User Id :  {{selectedUser.id}}</h6>
+      <h6>User Name :  {{selectedUser.name}}</h6>
+      <h6>Phone No :  {{selectedUser.phone_no}}</h6>
+    </div>
+  </div>
+</div>
